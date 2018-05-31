@@ -1,2 +1,2 @@
 # ioc
-A little dependency injection framework.
+A small dependency injection framework.
