@@ -7,11 +7,11 @@ import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-public class ManagedInstance<T>{
+public class Embelished<T>{
     private T instance;
     Set<Dependency> dependencies = new HashSet<>();
 
-    public ManagedInstance(T instance) {
+    public Embelished(T instance) {
         this.instance = instance;
         this.detectFields();
     }
