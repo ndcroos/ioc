@@ -1,6 +1,6 @@
 public interface IContainer {
 
-    <T> ManagedInstance<T> instantiate(Class<T> clazz) throws Exception ;
+    <T> Embelished<T> instantiate(Class<T> clazz) throws Exception ;
     
     Set<Object> find(Class<?>... props);
     
