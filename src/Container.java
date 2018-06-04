@@ -31,7 +31,11 @@ public class Container implements IContainer{
         });
         return set;
     }
-
+    
+    
+    /*
+    
+    */
     @Override
     public void bind(Object instance, Class<?>... properties) {
         
@@ -43,13 +47,19 @@ public class Container implements IContainer{
         
         mInstance.notifyInstanceAdded(instance, propSet);
     }
-
+    
+    
+    /*
+    
+    */
     @Override
     public void update(Object instance, Class<?>... properties) {
         Embelished<T> mInstance;
         mInstance.notifyInstanceUpdated(instance, properties);
     }
 
+    /*
+    */
     @Override
     public void unbind(Object instance) {
         Set<Class<?>> get = this.context.get(new Embelished(instance)); //equality?
